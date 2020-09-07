@@ -1,0 +1,272 @@
+{% extends 'base.html'%}
+{% block content%}
+
+<style>
+body{
+    overflow-x: hidden;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+</style>
+<div class="row">
+   <div class="col-xs-6">
+     <div class="container">
+  <img src="/static/img/loveanime.png" style="width:145%;">
+
+
+</div>
+     </div>
+   </div>
+
+ </div>
+
+<figure>
+    <div class="fix-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+
+
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4">Anime Library</h1>
+        </div>
+        <hr>
+        <div class ="col-12">
+            <p class="lead">Flip for summary</p>
+
+        </div>
+    </div>
+</div>
+    <div class="container-fluid padding">
+    <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/dbz.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>DBZ</h1>
+      <p>"Dragon Ball Z" follows the adventures of Goku who, along with the Z Warriors,
+          defends the Earth against evil. The action adventures are entertaining
+          and teaches valuable character virtues such as teamwork, loyalty, and trustworthiness.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/Uzumaki.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Naruto</h1>
+      <p>Naruto Uzumaki, a resident of the Hidden Leaf Village,
+          who witnessed pain since he was born and strives hard to achieve recognition in his
+          own village by vowing to himself to become the village leader .</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/one.png" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>One Piece</h1>
+      <p>Monkey D. Luffy, a young man who, inspired by his childhood idol and powerful pirate "Red Haired" Shanks,
+          sets off on a journey from the East Blue Sea to find the titular treasure and proclaim himself the King of the Pirates.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/equivalent.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Fullmetal</h1>
+      <p> Alchemy revolved around scientific laws of equal exchange,
+          the story follows two  brothers named Edward and Alphonse ,
+          who are searching for the philosopher's stone to restore their bodies after a failed attempt to bring their mother back.</p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div>
+     <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/attackTitan.png" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Attack on Titan</h1>
+      <p>It is set in a fantasy world where humanity lives within territories surrounded by three enormous walls
+          that protect them from gigantic man-eating humanoids referred to as Titans.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/hunter.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Hunter x Hunter</h1>
+      <p>Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness.
+          With his friends and his potential, he seeks for his father who left him when he was younger.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/Bleach.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Bleach</h1>
+      <p>Bleach follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his parents'
+          destiny after he obtains the powers of a Soul Reaper from another Soul Reaper, Rukia Kuchiki.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/Promised.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Neverland</h1>
+      <p>Emma is an 11-year-old orphan living in Grace Field House, a self-contained orphanage housing her and 37 other orphans.
+          The orphans are allowed complete freedom, except to venture beyond the grounds or the gate. </p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div>
+     <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/myhero.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>My hero</h1>
+      <p>In a world populated with superhumans, the superhero-loving Izuku Midoriya is without power.
+          However,  Izuku inherits the powers of the world's best superhero,
+          All Might, his hopes of becoming the top hero are now possible.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/Demon.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Demon Slayer</h2>
+      <p> Taisho-era boy who lives in the mountains and sells charcoal to raise money for his family.
+          His peaceful life is disrupted when demons attack his family in the middle
+          of the night while he’s on a selling run in the town </p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/death.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Death Note</h2>
+      <p>Student discovers a supernatural notebook that has deadly powers.
+          He can kill anyone he wishes by inscribing their name within its pages.
+          With his new power, he begins to eliminate those he deems unworthy of life.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/img/tokyo.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Tokyo Ghoul</h2>
+      <p>Tokyo college student is attacked by a ghoul,
+          a superpowered human who feeds on human flesh.
+          He survives, but has become part ghoul and becomes a fugitive on the run. </p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div>
+    </div>
+
+    {% endblock %}

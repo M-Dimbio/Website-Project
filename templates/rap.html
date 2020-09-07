@@ -1,0 +1,282 @@
+{% extends 'base.html'%}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+{% block content%}
+    <style>
+    html,body{
+        overflow-x: hidden;
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    .font-style{
+        font-style: italic;
+    }
+    /* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+  <div class="row">
+   <div class="col-xs-6">
+     <div class="container">
+  <img src="/static/img/hongkong.jpg" style="width:145%;">
+
+         <div class="centered"><h1 class="font-style">The Power of Music</h1> </div>
+</div>
+     </div>
+   </div>
+
+ </div>
+
+
+
+
+<!-- Fixed Background -->
+<figure>
+    <div class="fix-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+<!-- Meet the team -->
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4">My favourite Musicians</h1>
+        </div>
+        <hr>
+        <div class ="col-12">
+            <p class="lead"></p>
+
+        </div>
+    </div>
+</div>
+
+<!-- cards >
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <img class="card-imd-top"  src="/static/img/j.cole.jpg">
+
+
+        </div>
+    </div>
+</div-->
+<div class="container-fluid padding">
+    <div class="row padding">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/Notorious.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">Biggie</h5>
+    <p class="card-text">Christopher George Latore Wallace (May 21, 1972 – March 9, 1997), better known as The Notorious B.I.G.,
+        Biggie Smalls, or Biggie, was an American rapper, songwriter, and actor. He is widely considered to be one of the greatest rappers of all time.</p>
+    <a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." class="btn btn-success">Learn more</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/Tupac.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">2pac</h5>
+    <p class="card-text">Tupac Amaru Shakur ( born Lesane Parish Crooks, June 16, 1971 – September 13, 1996),
+        popularly known by his stage name 2Pac, was an American rapper and actor.
+        He is considered by many as one of the most significant rappers of all time</p>
+    <a href="https://en.wikipedia.org/wiki/Tupac_Shakur" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/snoop.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Snoop</h5>
+    <p class="card-text">Calvin Cordozar Broadus Jr. (born October 20, 1971), known professionally as Snoop Dogg,
+        is an American rapper, singer, songwriter, producer, media personality, entrepreneur, and actor.
+        His music career began in 1992. </p>
+    <a href="https://en.wikipedia.org/wiki/Snoop_Dogg" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/jay-z.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Jay-z</h5>
+    <p class="card-text">Shawn Corey Carter born  1969, known professionally as Jay-Z
+        is an American rapper, songwriter, record producer, record company executive, and businessman.
+        Jay-Z first began his musical career after founding the record label Roc-A-Fella Records in 1995,</p>
+    <a href="https://en.wikipedia.org/wiki/Jay-Z" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+</div>
+
+    </div>
+
+    <div class="container-fluid padding">
+     <div class="row padding">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/j.cole.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">J.cole</h5>
+    <p class="card-text">Jermaine Lamarr Cole born in 1985 is an American rapper, singer, songwriter, producer, and record executive.
+        Born on a military base in Germany and raised in Fayetteville, North Carolina, Cole initially gained recognition as a rapper following
+        the release of his debut mixtape in early 2007.</p>
+    <a href="https://en.wikipedia.org/wiki/J._Cole" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/Kendrick.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Kendrick Lamar</h5>
+    <p class="card-text">Kendrick Lamar Duckworth born in 1987 is an American rapper, songwriter, and record producer.
+        He is regarded by many critics and contemporaries as one of the most important and influential hip hop artists of his generation,
+        and as one of the greatest rappers and lyricists of all time.</p>
+    <a href="https://en.wikipedia.org/wiki/Kendrick_Lamar" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+    </div>
+               <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/Kanye.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Kanye West</h5>
+    <p class="card-text">Kanye Omari West born in 1977 is an American rapper, singer, songwriter, record producer,
+        entrepreneur and fashion designer.West is among the most critically acclaimed musicians of the 21st century, with his music
+        having spanned a broad range of styles.</p>
+    <a href="https://en.wikipedia.org/wiki/Kanye_West" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+               <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/drake.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Drake</h5>
+    <p class="card-text">Aubrey Drake Graham born in 1986 is a Canadian rapper, singer, songwriter, producer, actor, and businessman.
+        Drake initially gained recognition as an actor on the teen drama television series Degrassi intent on
+        pursuing a career in music,
+        he left the series in 2007 .</p>
+    <a href="https://en.wikipedia.org/wiki/Drake_(musician)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+</div>
+
+    </div>
+     <div class="container-fluid padding">
+         <div class="row padding">
+             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/mars.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">Bruno Mars</h5>
+    <p class="card-text">
+Peter Gene Hernandez born in 1985, known professionally as Bruno Mars, is an American singer, songwriter, record producer,
+        multi-instrumentalist, and dancer. He is known for his stage performances, retro showmanship, and for performing in a wide range
+        of musical styles.</p>
+    <a href="https://en.wikipedia.org/wiki/Bruno_Mars" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/stormzy.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Stormzy</h5>
+    <p class="card-text">Michael Ebenazer Kwadjo Omari Owuo Jr. (born 26 July 1993), known professionally as Stormzy,
+        is a British rapper, singer and songwriter. In 2014, he garnered attention on the UK underground music scene through
+        his Wicked Skengman series of freestyles over classic grime beats.</p>
+    <a href="https://en.wikipedia.org/wiki/Stormzy" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/eminem.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Eminem</h5>
+    <p class="card-text">Marshall Bruce Mathers III born in 1972, known professionally as Eminem , is an American rapper, songwriter,
+        record producer, record executive and actor. He is one of the most successful artists of the 21st century.
+        Eminem was a member of the hip hop group D12.</p>
+    <a href="https://en.wikipedia.org/wiki/Eminem" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/img/Booba.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Booba</h5>
+    <p class="card-text">Élie Yaffa born in 1976 better known under his stage name Booba,
+        is a French rapper. After a brief stint as a break dancer in the early 1990s, Booba partnered with his friend Ali to form Lunatic.
+        The duo released a critically acclaimed album in 2000 but disbanded in 2003.</p>
+    <a href="https://en.wikipedia.org/wiki/Booba" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+         </div>
+     </div>
+{% endblock %}

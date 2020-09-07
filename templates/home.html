@@ -1,0 +1,183 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<style>
+
+
+</style>
+
+
+
+<!--Caroussel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="/static/img/naruto.jpg" alt="First slide " style="width: max-content; height: 100%;">
+                      <div class="carousel-caption">
+                          <h1 class="display-2">Momo's World</h1>
+                          <h3>Momo's World</h3>
+                          <a class="btn btn-outline-light btn-lg" href="/anime"  role="button" >Konoha</a>
+                         <a class="btn btn-primary btn-lg" href="/portfolio"  role="button" >Portfolio</a>
+
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/img/spiderman.jpg" alt="Second slide" style="width: max-content; height: 100%;">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/img/manchester.jpg" alt="Third slide" style="width: max-content; height: 100%;">
+                  </div>
+                </div>
+</div>
+
+
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4">Programing languages</h1>
+        </div>
+        <hr>
+        <div class ="col-12">
+            <p class="lead">Mastered Languages</p>
+
+        </div>
+    </div>
+</div>
+<!-- Three column section -->
+<div class ="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-html5"></i>
+            <h3>Html5</h3>
+            <p> HTML Knowledge,HTML5.</p>
+        </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>CSS</h3>
+             <p>CSS knowledge,CSS3.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+             <p>CSS knowledge,CSS3.</p>
+        </div>
+         <div class="col-sm-12 col-md-4">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+             <p>CSS knowledge,CSS3.</p>
+        </div>
+         <div class="col-sm-12 col-md-4">
+            <i class="fab fa-js"></i>
+            <h3>JS</h3>
+             <p>CSS knowledge,CSS3.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fab">...</i>
+            <h3>More</h3>
+             <p>CSS knowledge,CSS3.</p>
+        </div>
+
+    </div>
+<hr class="my-4">
+</div>
+<!-- Two column section -->
+
+
+<!--button class="fun" data-toggle="collapse" data-target="#emoji">Shonen</button>
+<div id="emoji" class="collapse"-->
+    <div class="container-fluid padding">
+     <div class="row text-center">
+         <div class="col-sm-6 col-md-3">
+        <img class="gif" id="gifResize" src="/static/img/StrawHat.png">
+         </div>
+          <div class="col-sm-6 col-md-3">
+        <img class="gif" id="gifResize" src="/static/img/SurveyCorps.png">
+         </div>
+         <div class="col-sm-6 col-md-3">
+        <img class="gif" id="gifResize" src="/static/img/mangekio.png">
+         </div>
+         <div class="col-sm-6 col-md-3">
+        <img class="gif" id="gifResize" src="/static/img/Gon.png">
+         </div>
+     </div>
+    </div>
+</div>
+
+
+
+<!-- email
+<div class="row padding">
+    <div class="col-12 text-center">
+        <h2>Email</h2>
+    </div>
+
+<div class="container-fluid">
+    <div class="col-12 social padding">
+       <div action="action_page.php">
+<div class="col-12 text-center">
+    <label  for="fname">First Name</label>
+    <input type="text" class="label" id="fname" name="firstname" placeholder="Your name..">
+</div>
+           <div class="col-12 text-center">
+    <label for="lname">Last Name</label>
+    <input type="text" class="label" id="lname" name="lastname" placeholder="Your last name..">
+       </div>
+
+         <div class="col-12 text-center">
+    <label for="subject" style="margin-right: 22px">Subject</label>
+             <input class="label" type="text" id="subject" placeholder="Subject..." >
+         </div>
+           <br>
+           <div class="col-12 text-center">
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 800px;margin-left: 75px;"></textarea>
+               </div>
+               <div class="col-12 text-center">
+    <input type="submit" value="Submit">
+           </div>
+
+  </form>
+</div>
+    </div>
+</div>
+</div>
+-->
+
+<form id="frmContact" action="" method="post" style="background-color: white">
+    <h1 class="text-center">Email for more info</h1>
+    <hr class="light">
+    <div id="mail-status"></div>
+    <div class="contact-row column-right">
+        <label style="padding-top: 20px;">Name</label> <span
+            id="userName-info" class="info"></span><br /> <input
+            type="text" name="userName" id="userName"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row column-right">
+        <label>Email</label> <span id="userEmail-info" class="info"></span><br />
+        <input type="text" name="userEmail" id="userEmail"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row">
+        <label>Phone</label> <span id="subject-info" class="info"></span><br />
+        <input type="text" name="subject" id="subject"
+            class="demoInputBox">
+    </div>
+    <div>
+        <label>Message</label> <span id="content-info" class="info"></span><br />
+        <textarea name="content" id="content" class="demoInputBox"
+            rows="3"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Send" class="btnAction" />
+    </div>
+</form>
+<div id="loader-icon" style="display: none;">
+    <img src="LoaderIcon.gif" />
+</div>
+</body>
+{% endblock %}

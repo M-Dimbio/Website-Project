@@ -1,0 +1,108 @@
+{% extends 'base.html'%}
+{% block content%}
+    <style>
+body{
+    background-color: dimgray;
+;
+}
+
+table{
+    table-layout: fixed;
+}
+.checked {
+  color: darkred;
+}
+
+    </style>
+   <img src="/static/img/coding.jpg" style="width: 100%;height:85% " >
+
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4"style="text-shadow: #222222; color: darkred";  >Code-Blooded</h1>
+        </div>
+
+        <div class ="col-12">
+            <p class="lead">Skillz</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive-xl">
+  <table class="table">
+   <table class="table table-bordered table-dark">
+  <thead >
+    <tr>
+        <th scope="col" ><center>Programming languages</center></th>
+      <th scope="col">#Years</th>
+      <th scope="col"># Projects</th>
+      <th scope="col">Skillz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><center>Java</center></th>
+      <td><center>2</center></td>
+      <td><center>10</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></td>
+    </tr>
+    <tr>
+       <th scope="row"><center>JavaScript</center></th>
+      <td><center>1</center></td>
+      <td><center>1</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span></td>
+    </tr>
+    <tr>
+      <th scope="row"><center>Python</center></th>
+      <td><center>1</center></td>
+      <td><center>1</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span></td>
+    </tr>
+  <tr>
+      <th scope="row"><center>HTML</center></th>
+      <td><center>1</center></td>
+      <td><center>3</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></td>
+    </tr>
+  <tr>
+      <th scope="row"><center>CSS</center></th>
+      <td><center>1</center></td>
+      <td><center>3</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></td>
+    </tr>
+  <tr>
+      <th scope="row"><center>C++</center></th>
+      <td><center>1</center></td>
+      <td><center>3</center></td>
+      <td><span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span></td>
+    </tr>
+  </tbody>
+</table>
+  </table>
+</div>
+ {% endblock %}
